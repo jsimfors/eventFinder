@@ -53,35 +53,42 @@ struct CreateHypedEventView: View {
                             Text("Remove Image")
                                 .foregroundColor(.red)
                         }
+                        .buttonStyle(BorderlessButtonStyle())
+
                     }
-                    hypedEvent.image()!
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                    Button(action: {
+                        showImagePicker = true }) {
+                            hypedEvent.image()!
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                            
+                        }
+                        .buttonStyle(BorderlessButtonStyle())
                 }
             }
-            .sheet(isPresented: $showImagePicker) {
-                ImagePicker(imageData: $hypedEvent.imageData)
-            }
-            
-            Section {
+                    .sheet(isPresented: $showImagePicker) {
+                        ImagePicker(imageData: $hypedEvent.imageData)
+                    }
                 
-                ColorPicker(selection: $hypedEvent.color) {
-                    FormLabelView(title: "Color", iconSystemName: "eyedropper", color: Color.green)
+                Section {
+                    
+                    ColorPicker(selection: $hypedEvent.color) {
+                        FormLabelView(title: "Color", iconSystemName: "eyedropper", color: Color.green)
+                    }
                 }
-            }
-            Section {
-                FormLabelView(title: "URL", iconSystemName: "link", color: Color.orange)
-                
-                TextField("Website, ex. google.com", text: $hypedEvent.title)
-                    .keyboardType(.URL)
-                    .autocapitalization(.none)
+                Section {
+                    FormLabelView(title: "URL", iconSystemName: "link", color: Color.orange)
+                    
+                    TextField("Website, ex. google.com", text: $hypedEvent.title)
+                        .keyboardType(.URL)
+                        .autocapitalization(.none)
+                }
             }
         }
     }
-}
-
-struct CreateHypedEvent_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateHypedEventView()
+    
+    struct CreateHypedEvent_Previews: PreviewProvider {
+        static var previews: some View {
+            CreateHypedEventView()
+        }
     }
-}
