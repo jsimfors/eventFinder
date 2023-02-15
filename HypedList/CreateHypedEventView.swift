@@ -22,7 +22,7 @@ struct CreateHypedEventView: View {
             }
             Section {
                 FormLabelView(title: "Date", iconSystemName: "calendar", color: Color.pink)
-
+                
                 DatePicker("Date", selection: $hypedEvent.date, displayedComponents: showTime ? [.date, .hourAndMinute] : [.date])
                     .datePickerStyle(GraphicalDatePickerStyle())
                 Toggle(isOn: $showTime) {
@@ -30,24 +30,48 @@ struct CreateHypedEventView: View {
                 }
             }
             
-            Button(action: {
-                showImagePicker = true
-            }) {
-                Text("Pick Image")
+            Section {
+                if hypedEvent.image() == nil {
+                    HStack {
+                        FormLabelView(title: "Image", iconSystemName: "camera", color: Color.purple)
+                        Spacer()
+                        
+                        Button(action: {
+                            showImagePicker = true
+                        }) {
+                            Text("Pick Image")
+                        }
+                    }
+                } else {
+                    HStack {
+                        FormLabelView(title: "Image", iconSystemName: "camera", color: Color.purple)
+                        Spacer()
+                        
+                        Button(action: {
+                            hypedEvent.imageData = nil
+                        }) {
+                            Text("Remove Image")
+                                .foregroundColor(.red)
+                        }
+                    }
+                    hypedEvent.image()!
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
             }
             .sheet(isPresented: $showImagePicker) {
-                ImagePicker()
+                ImagePicker(imageData: $hypedEvent.imageData)
             }
             
             Section {
-
+                
                 ColorPicker(selection: $hypedEvent.color) {
                     FormLabelView(title: "Color", iconSystemName: "eyedropper", color: Color.green)
                 }
             }
             Section {
                 FormLabelView(title: "URL", iconSystemName: "link", color: Color.orange)
-
+                
                 TextField("Website, ex. google.com", text: $hypedEvent.title)
                     .keyboardType(.URL)
                     .autocapitalization(.none)
