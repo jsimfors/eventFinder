@@ -10,6 +10,7 @@
 		1E32AE9A299CFEF3002C6AB4 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */; };
 		1E3FA62A299CE3BD007A23DD /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */; };
 		1EBCAED7299D04D70080A77E /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBCAED6299D04D70080A77E /* FormLabelView.swift */; };
+		1EBCAED9299D09E90080A77E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBCAED8299D09E90080A77E /* ImagePicker.swift */; };
 		1EF7AC6F29969C630000D9C5 /* HypedListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7AC6E29969C630000D9C5 /* HypedListApp.swift */; };
 		1EF7AC7129969C630000D9C5 /* HypedListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7AC7029969C630000D9C5 /* HypedListTabView.swift */; };
 		1EF7AC7329969C680000D9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF7AC7229969C680000D9C5 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 		1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
 		1EBCAED6299D04D70080A77E /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
+		1EBCAED8299D09E90080A77E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1EF7AC6B29969C630000D9C5 /* HypedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF7AC6E29969C630000D9C5 /* HypedListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListApp.swift; sourceTree = "<group>"; };
 		1EF7AC7029969C630000D9C5 /* HypedListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListTabView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				1EF7AC7029969C630000D9C5 /* HypedListTabView.swift */,
 				1EF7AC7D29969F3F0000D9C5 /* UpcomingView.swift */,
 				1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */,
+				1EBCAED8299D09E90080A77E /* ImagePicker.swift */,
 				1EBCAED6299D04D70080A77E /* FormLabelView.swift */,
 				1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */,
 				1EF7AC7229969C680000D9C5 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 				1EF7AC7129969C630000D9C5 /* HypedListTabView.swift in Sources */,
 				1EBCAED7299D04D70080A77E /* FormLabelView.swift in Sources */,
 				1E32AE9A299CFEF3002C6AB4 /* HypedEvent.swift in Sources */,
+				1EBCAED9299D09E90080A77E /* ImagePicker.swift in Sources */,
 				1E3FA62A299CE3BD007A23DD /* CreateHypedEventView.swift in Sources */,
 				1EF7AC6F29969C630000D9C5 /* HypedListApp.swift in Sources */,
 				1EF7AC7E29969F3F0000D9C5 /* UpcomingView.swift in Sources */,
