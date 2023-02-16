@@ -23,12 +23,14 @@ struct HypedListTabView: View {
                     Image(systemName: "lasso.sparkles")
                     Text("Discover")
                 }
-            Text("3")
-                .tabItem {
-                    Image(systemName: "highlighter")
-                    
-                    Text("Past")
-                }
+            NavigationView{
+                PastView()
+            }
+            .tabItem {
+                Image(systemName: "highlighter")
+                
+                Text("Past")
+            }
         }
     }
 }

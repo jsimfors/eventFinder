@@ -12,6 +12,8 @@
 		1E8E1685299E3328002B9FF9 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8E1684299E3328002B9FF9 /* SwiftDate */; };
 		1E8E1687299E3B6D002B9FF9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E1686299E3B6D002B9FF9 /* DataController.swift */; };
 		1E8E168C299E47B8002B9FF9 /* UIColorHexSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8E168B299E47B8002B9FF9 /* UIColorHexSwift */; };
+		1E8E168E299E725C002B9FF9 /* HypedEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E168D299E725C002B9FF9 /* HypedEventListView.swift */; };
+		1E8E1690299E7B27002B9FF9 /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E168F299E7B27002B9FF9 /* PastView.swift */; };
 		1EBCAED7299D04D70080A77E /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBCAED6299D04D70080A77E /* FormLabelView.swift */; };
 		1EBCAED9299D09E90080A77E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBCAED8299D09E90080A77E /* ImagePicker.swift */; };
 		1EBCAEDD299D3F7A0080A77E /* HypedEventTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBCAEDC299D3F7A0080A77E /* HypedEventTileView.swift */; };
@@ -26,6 +28,8 @@
 		1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 		1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
 		1E8E1686299E3B6D002B9FF9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		1E8E168D299E725C002B9FF9 /* HypedEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventListView.swift; sourceTree = "<group>"; };
+		1E8E168F299E7B27002B9FF9 /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
 		1EBCAED6299D04D70080A77E /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
 		1EBCAED8299D09E90080A77E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1EBCAEDC299D3F7A0080A77E /* HypedEventTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventTileView.swift; sourceTree = "<group>"; };
@@ -64,10 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				1EBCAEDC299D3F7A0080A77E /* HypedEventTileView.swift */,
+				1E8E168D299E725C002B9FF9 /* HypedEventListView.swift */,
 				1EBCAED8299D09E90080A77E /* ImagePicker.swift */,
 				1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */,
-				1EF7AC7D29969F3F0000D9C5 /* UpcomingView.swift */,
 				1EBCAED6299D04D70080A77E /* FormLabelView.swift */,
+				1EF7AC7D29969F3F0000D9C5 /* UpcomingView.swift */,
+				1E8E168F299E7B27002B9FF9 /* PastView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 			files = (
 				1EBCAEDD299D3F7A0080A77E /* HypedEventTileView.swift in Sources */,
 				1EF7AC7129969C630000D9C5 /* HypedListTabView.swift in Sources */,
+				1E8E1690299E7B27002B9FF9 /* PastView.swift in Sources */,
 				1EBCAED7299D04D70080A77E /* FormLabelView.swift in Sources */,
 				1E32AE9A299CFEF3002C6AB4 /* HypedEvent.swift in Sources */,
 				1E8E1687299E3B6D002B9FF9 /* DataController.swift in Sources */,
@@ -197,6 +204,7 @@
 				1E3FA62A299CE3BD007A23DD /* CreateHypedEventView.swift in Sources */,
 				1EF7AC6F29969C630000D9C5 /* HypedListApp.swift in Sources */,
 				1EF7AC7E29969F3F0000D9C5 /* UpcomingView.swift in Sources */,
+				1E8E168E299E725C002B9FF9 /* HypedEventListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
