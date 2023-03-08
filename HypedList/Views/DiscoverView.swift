@@ -13,6 +13,19 @@ struct DiscoverView: View {
     var body: some View {
         HypedEventListView(hypedEvents: data.discoverHypedEvents.sorted { $0.date < $1.date }, noEventsText: "Currently no new events to Discover...")
             .navigationTitle("Discover")
+            .toolbar {
+                ToolbarItemGroup {
+                    Button(action: {
+                        data.getDiscoverEvents()
+                        
+                    }) {
+                        Image(systemName: "arrow.clockwise")
+                            .font(.title)
+                    }
+                    
+                }
+                
+            }
     }
 }
 

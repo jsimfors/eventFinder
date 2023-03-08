@@ -104,7 +104,11 @@ class DataController: ObservableObject {
                         }
                        
                         if let imageURL = jsonEvent.imageData {
-                           // TBD
+                            if let url = URL(string: imageURL) {
+                                if let data = try? Data(contentsOf: url) {
+                                    hypedEvent.imageData = data
+                                }
+                            }
                         }
                         hypedEventsToAdd.append(hypedEvent)
                     }

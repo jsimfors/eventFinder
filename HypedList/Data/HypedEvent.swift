@@ -45,7 +45,11 @@ class HypedEvent: ObservableObject, Identifiable, Codable {
         title = try values.decode(String.self, forKey: .title)
         url = try values.decode(String.self, forKey: .url)
         let colorHex = try values.decode(String.self, forKey: .color)
-        color = Color(UIColor(colorHex))
+        if colorHex == "#00000000" {
+            color = .gray
+        } else {
+            color = Color(UIColor(colorHex))
+        }
         imageData = try? values.decode(Data.self, forKey: .imageData)
 
     }
@@ -76,6 +80,10 @@ class HypedEvent: ObservableObject, Identifiable, Codable {
     
     func timeFromNow() -> String {
         return date.toRelative(since: DateInRegion())
+    }
+    
+    func validURL() -> URL? {
+        return URL(string: url)
     }
 }
 

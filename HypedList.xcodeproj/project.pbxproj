@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E12185629B8CCE900AD4391 /* HypedEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12185529B8CCE900AD4391 /* HypedEventDetailView.swift */; };
 		1E32AE9A299CFEF3002C6AB4 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */; };
 		1E3FA62A299CE3BD007A23DD /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */; };
 		1E8E1685299E3328002B9FF9 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8E1684299E3328002B9FF9 /* SwiftDate */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E12185529B8CCE900AD4391 /* HypedEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventDetailView.swift; sourceTree = "<group>"; };
 		1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 		1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
 		1E8E1686299E3B6D002B9FF9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				1EF7AC7D29969F3F0000D9C5 /* UpcomingView.swift */,
 				1E8E168F299E7B27002B9FF9 /* PastView.swift */,
 				1ED32A0F29A528B500883B49 /* DiscoverView.swift */,
+				1E12185529B8CCE900AD4391 /* HypedEventDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				1E3FA62A299CE3BD007A23DD /* CreateHypedEventView.swift in Sources */,
 				1EF7AC6F29969C630000D9C5 /* HypedListApp.swift in Sources */,
 				1EF7AC7E29969F3F0000D9C5 /* UpcomingView.swift in Sources */,
+				1E12185629B8CCE900AD4391 /* HypedEventDetailView.swift in Sources */,
 				1E8E168E299E725C002B9FF9 /* HypedEventListView.swift in Sources */,
 				1ED32A1029A528B500883B49 /* DiscoverView.swift in Sources */,
 			);

@@ -13,8 +13,8 @@ struct HypedListApp: App {
         WindowGroup {
             HypedListTabView()
                 .onAppear() {
-                    // DataController.shared.loadData()
-                    DataController.shared.getDiscoverEvents()
+                    DataController.shared.loadData()
+                    // DataController.shared.getDiscoverEvents()
                 }
         }
     }
