@@ -18,17 +18,18 @@ struct HypedListTabView: View {
                 Text("Upcoming")
                 
             }
-            Text("2")
-                .tabItem {
-                    Image(systemName: "lasso.sparkles")
-                    Text("Discover")
-                }
+            NavigationView{
+                DiscoverView()
+            }
+            .tabItem {
+                Image(systemName: "lasso.sparkles")
+                Text("Discover")
+            }
             NavigationView{
                 PastView()
             }
             .tabItem {
                 Image(systemName: "highlighter")
-                
                 Text("Past")
             }
         }
