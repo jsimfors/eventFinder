@@ -71,8 +71,8 @@
 		1E8E1689299E4616002B9FF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1EBCAEDC299D3F7A0080A77E /* HypedEventTileView.swift */,
 				1E8E168D299E725C002B9FF9 /* HypedEventListView.swift */,
+				1EBCAEDC299D3F7A0080A77E /* HypedEventTileView.swift */,
 				1EBCAED8299D09E90080A77E /* ImagePicker.swift */,
 				1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */,
 				1EBCAED6299D04D70080A77E /* FormLabelView.swift */,

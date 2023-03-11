@@ -41,7 +41,9 @@ struct HypedEventDetailView: View {
             Spacer()
             
             if hypedEvent.validURL() != nil {
-                Button(action: {}) {
+                Button(action: {
+                    UIApplication.shared.open(hypedEvent.validURL()!)
+                }) {
                     HypedEventDetailViewButton(backgroundColor: .orange, imageName: "link", text: "Visit site")
                 }
             }
@@ -61,6 +63,7 @@ struct HypedEventDetailView: View {
             
             
         }
+        .navigationBarTitleDisplayMode(.inline)
         
     }
     
@@ -85,7 +88,7 @@ struct HypedEventDetailViewButton: View {
         .background(backgroundColor)
         .foregroundColor(.white)
         .cornerRadius(5)
-        .padding(.top, 10)
+        .padding(.bottom, 10)
         .padding(.horizontal, 20)
     }
     
