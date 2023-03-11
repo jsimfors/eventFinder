@@ -62,8 +62,8 @@
 		1E8E1688299E45E9002B9FF9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */,
 				1E8E1686299E3B6D002B9FF9 /* DataController.swift */,
+				1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";

@@ -11,11 +11,11 @@ import SwiftDate
 import UIColorHexSwift
 
 class HypedEvent: ObservableObject, Identifiable, Codable {
-    var id = UUID().uuidString
-    var date = Date()
-    var title = ""
-    var url = ""
-    var color = Color.purple
+    @Published var id = UUID().uuidString
+    @Published var date = Date()
+    @Published var title = ""
+    @Published var url = ""
+    @Published var color = Color.purple
     @Published var imageData: Data?
     
     enum CodingKeys: String, CodingKey {

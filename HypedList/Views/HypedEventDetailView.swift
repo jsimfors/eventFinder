@@ -10,6 +10,7 @@ import SwiftUI
 struct HypedEventDetailView: View {
     
     @ObservedObject var hypedEvent: HypedEvent
+    @State var showingCreateView = false
     var isDiscover = false
     
     var body: some View {
@@ -58,11 +59,20 @@ struct HypedEventDetailView: View {
                 
             } else {
                 
-                Button(action: {}) {
+                Button(action: {
+                    showingCreateView = true
+                    
+                }) {
                     HypedEventDetailViewButton(backgroundColor: .green, imageName: "pencil.circle", text: "Edit")
                 }
-                Button(action: {}) {
-                    HypedEventDetailViewButton(backgroundColor: .red, imageName: "trash", text: "Delete event")
+                .sheet(isPresented:
+                        $showingCreateView){
+                    CreateHypedEventView(hypedEvent: hypedEvent)
+                }
+                Button(action: {
+                    DataController.shared.deleteHypedEvent(hypedEvent: hypedEvent)
+                }) {
+                    HypedEventDetailViewButton(backgroundColor: .red, imageName: "trash", text: "Delete")
                 }
             }
             
