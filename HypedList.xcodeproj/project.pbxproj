@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1E12185629B8CCE900AD4391 /* HypedEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12185529B8CCE900AD4391 /* HypedEventDetailView.swift */; };
+		1E2AA2AE29C1EAE50006F557 /* HypedListWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2AA2AD29C1EAE50006F557 /* HypedListWatchApp.swift */; };
+		1E2AA2B029C1EAE50006F557 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2AA2AF29C1EAE50006F557 /* ContentView.swift */; };
+		1E2AA2B229C1EAEB0006F557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2AA2B129C1EAEB0006F557 /* Assets.xcassets */; };
+		1E2AA2B529C1EAEB0006F557 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2AA2B429C1EAEB0006F557 /* Preview Assets.xcassets */; };
+		1E2AA2BA29C372330006F557 /* HypedEventWatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2AA2B929C372330006F557 /* HypedEventWatchListView.swift */; };
+		1E2AA2BB29C372B00006F557 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */; };
+		1E2AA2BE29C3732D0006F557 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2AA2BD29C3732D0006F557 /* SwiftDate */; };
+		1E2AA2C029C3732D0006F557 /* UIColorHexSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2AA2BF29C3732D0006F557 /* UIColorHexSwift */; };
 		1E32AE9A299CFEF3002C6AB4 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */; };
 		1E3FA62A299CE3BD007A23DD /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */; };
 		1E8E1685299E3328002B9FF9 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8E1684299E3328002B9FF9 /* SwiftDate */; };
@@ -28,6 +36,12 @@
 
 /* Begin PBXFileReference section */
 		1E12185529B8CCE900AD4391 /* HypedEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventDetailView.swift; sourceTree = "<group>"; };
+		1E2AA2AB29C1EAE50006F557 /* HypedListWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HypedListWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2AA2AD29C1EAE50006F557 /* HypedListWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListWatchApp.swift; sourceTree = "<group>"; };
+		1E2AA2AF29C1EAE50006F557 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E2AA2B129C1EAEB0006F557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E2AA2B429C1EAEB0006F557 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E2AA2B929C372330006F557 /* HypedEventWatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventWatchListView.swift; sourceTree = "<group>"; };
 		1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 		1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
 		1E8E1686299E3B6D002B9FF9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E2AA2A829C1EAE50006F557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2AA2C029C3732D0006F557 /* UIColorHexSwift in Frameworks */,
+				1E2AA2BE29C3732D0006F557 /* SwiftDate in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EF7AC6829969C620000D9C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2AA2AC29C1EAE50006F557 /* HypedListWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				1E2AA2AD29C1EAE50006F557 /* HypedListWatchApp.swift */,
+				1E2AA2AF29C1EAE50006F557 /* ContentView.swift */,
+				1E2AA2B929C372330006F557 /* HypedEventWatchListView.swift */,
+				1E2AA2B129C1EAEB0006F557 /* Assets.xcassets */,
+				1E2AA2B329C1EAEB0006F557 /* Preview Content */,
+			);
+			path = "HypedListWatch Watch App";
+			sourceTree = "<group>";
+		};
+		1E2AA2B329C1EAEB0006F557 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E2AA2B429C1EAEB0006F557 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E2AA2BC29C3732D0006F557 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1E8E1688299E45E9002B9FF9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				1EF7AC6D29969C630000D9C5 /* HypedList */,
+				1E2AA2AC29C1EAE50006F557 /* HypedListWatch Watch App */,
 				1EF7AC6C29969C630000D9C5 /* Products */,
+				1E2AA2BC29C3732D0006F557 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				1EF7AC6B29969C630000D9C5 /* HypedList.app */,
+				1E2AA2AB29C1EAE50006F557 /* HypedListWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +178,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1E2AA2AA29C1EAE50006F557 /* HypedListWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2AA2B829C1EAEB0006F557 /* Build configuration list for PBXNativeTarget "HypedListWatch Watch App" */;
+			buildPhases = (
+				1E2AA2A729C1EAE50006F557 /* Sources */,
+				1E2AA2A829C1EAE50006F557 /* Frameworks */,
+				1E2AA2A929C1EAE50006F557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HypedListWatch Watch App";
+			packageProductDependencies = (
+				1E2AA2BD29C3732D0006F557 /* SwiftDate */,
+				1E2AA2BF29C3732D0006F557 /* UIColorHexSwift */,
+			);
+			productName = "HypedListWatch Watch App";
+			productReference = 1E2AA2AB29C1EAE50006F557 /* HypedListWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1EF7AC6A29969C620000D9C5 /* HypedList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EF7AC7A29969C690000D9C5 /* Build configuration list for PBXNativeTarget "HypedList" */;
@@ -156,6 +230,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					1E2AA2AA29C1EAE50006F557 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					1EF7AC6A29969C620000D9C5 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -179,11 +256,21 @@
 			projectRoot = "";
 			targets = (
 				1EF7AC6A29969C620000D9C5 /* HypedList */,
+				1E2AA2AA29C1EAE50006F557 /* HypedListWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E2AA2A929C1EAE50006F557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2AA2B529C1EAEB0006F557 /* Preview Assets.xcassets in Resources */,
+				1E2AA2B229C1EAEB0006F557 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EF7AC6929969C620000D9C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +283,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E2AA2A729C1EAE50006F557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2AA2B029C1EAE50006F557 /* ContentView.swift in Sources */,
+				1E2AA2AE29C1EAE50006F557 /* HypedListWatchApp.swift in Sources */,
+				1E2AA2BA29C372330006F557 /* HypedEventWatchListView.swift in Sources */,
+				1E2AA2BB29C372B00006F557 /* HypedEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EF7AC6729969C620000D9C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +317,65 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1E2AA2B629C1EAEB0006F557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HypedListWatch Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HypedListWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		1E2AA2B729C1EAEB0006F557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HypedListWatch Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HypedListWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 		1EF7AC7829969C680000D9C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E2AA2B829C1EAEB0006F557 /* Build configuration list for PBXNativeTarget "HypedListWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2AA2B629C1EAEB0006F557 /* Debug */,
+				1E2AA2B729C1EAEB0006F557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1EF7AC6629969C620000D9C5 /* Build configuration list for PBXProject "HypedList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -443,6 +609,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1E2AA2BD29C3732D0006F557 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E8E1683299E3328002B9FF9 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		1E2AA2BF29C3732D0006F557 /* UIColorHexSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E8E168A299E47B8002B9FF9 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColorHexSwift;
+		};
 		1E8E1684299E3328002B9FF9 /* SwiftDate */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1E8E1683299E3328002B9FF9 /* XCRemoteSwiftPackageReference "SwiftDate" */;

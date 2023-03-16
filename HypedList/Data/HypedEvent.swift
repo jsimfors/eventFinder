@@ -58,6 +58,7 @@ class HypedEvent: ObservableObject, Identifiable, Codable {
         
     }
     
+    #if !os(watchOS)
     var hasBeenAdded: Bool {
         let hypedEvent = DataController.shared.hypedEvents.first{ (hypedEvent) -> Bool in
             return hypedEvent.id == self.id
@@ -73,6 +74,7 @@ class HypedEvent: ObservableObject, Identifiable, Codable {
         }
         return nil
     }
+    #endif
     
     func dateAsString() -> String {
         let formatter = DateFormatter()
