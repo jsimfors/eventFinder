@@ -53,21 +53,29 @@ class DataController: ObservableObject {
     
     func saveData() {
         DispatchQueue.global().async {
-            let encoder = JSONEncoder()
-            if let encoded = try? encoder.encode(self.hypedEvents) {
-                UserDefaults.standard.setValue(encoded, forKey: "hypedEvents")
-                UserDefaults.standard.synchronize()
+            if let defaults = UserDefaults(suiteName: "group.com.johannatest.HypedList") {
+                let encoder = JSONEncoder()
+                if let encoded = try? encoder.encode(self.hypedEvents) {
+                    defaults.setValue(encoded, forKey: "hypedEvents")
+                    defaults.synchronize()
+                    
+                }
+                PhoneToWatchDataController.shared.sendContext(context: PhoneToWatchDataController.shared.convertHypedEventsToContext(hypedEvents: self.upcomingHypedEvents))
+                
             }
         }
     }
     
     func loadData() {
         DispatchQueue.global().async {
-            if let data = UserDefaults.standard.data(forKey: "hypedEvents") {
-                let decoder = JSONDecoder()
-                if let jsonHypedEvents = try? decoder.decode([HypedEvent].self, from: data) {
-                    DispatchQueue.main.async {
-                        self.hypedEvents = jsonHypedEvents
+            if let defaults = UserDefaults(suiteName: "group.com.johannatest.HypedList") {
+                if let data = defaults.data(forKey: "hypedEvents") {
+                    let decoder = JSONDecoder()
+                    if let jsonHypedEvents = try? decoder.decode([HypedEvent].self, from: data) {
+                        DispatchQueue.main.async {
+                            self.hypedEvents = jsonHypedEvents
+                            PhoneToWatchDataController.shared.sendContext(context: PhoneToWatchDataController.shared.convertHypedEventsToContext(hypedEvents: self.upcomingHypedEvents))
+                        }
                     }
                 }
             }
@@ -86,7 +94,7 @@ class DataController: ObservableObject {
         let url: String?
         let color: String?
         let imageData: String?
-      
+        
     }
     
     func getDiscoverEvents() {
@@ -94,17 +102,16 @@ class DataController: ObservableObject {
         
         let url = URL (string: "https://api.jsonbin.io/v3/b/63f4be99ebd26539d0827ed1/latest")
         // let key = "$2b$10$9C.deJvzx/MpqDkQvQZFVuyubEM..ugzLGWPZVrFI9TfBHcQXvBv2"
-        var request = URLRequest(url: url!)
+        let request = URLRequest(url: url!)
         // request.addValue(key, forHTTPHeaderField: "secret-key")
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if error == nil {
                 do {
                     let webData = try JSONDecoder().decode(RepositoryEvents.self, from: data!)
-
+                    
                     var hypedEventsToAdd: [HypedEvent] = []
                     for jsonEvent in webData.record {
-                        print(jsonEvent.id)
                         let hypedEvent = HypedEvent()
                         
                         if let id = jsonEvent.id {
@@ -129,7 +136,7 @@ class DataController: ObservableObject {
                         if let colorHex = jsonEvent.color {
                             hypedEvent.color = Color(UIColor("#" + colorHex))
                         }
-                       
+                        
                         if let imageURL = jsonEvent.imageData {
                             if let url = URL(string: imageURL) {
                                 if let data = try? Data(contentsOf: url) {
@@ -145,7 +152,7 @@ class DataController: ObservableObject {
                 }catch {
                     print (error)
                 }
-
+                
             }
         }.resume()
     }
