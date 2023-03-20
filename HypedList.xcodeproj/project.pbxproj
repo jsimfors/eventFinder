@@ -18,6 +18,7 @@
 		1E2AA2C029C3732D0006F557 /* UIColorHexSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2AA2BF29C3732D0006F557 /* UIColorHexSwift */; };
 		1E32AE9A299CFEF3002C6AB4 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */; };
 		1E3B11E429C8E89C003AC0D7 /* PhoneToWatchDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B11E329C8E89C003AC0D7 /* PhoneToWatchDataController.swift */; };
+		1E3B11E629C8EACD003AC0D7 /* WatchToPhoneDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B11E529C8EACD003AC0D7 /* WatchToPhoneDataController.swift */; };
 		1E3FA62A299CE3BD007A23DD /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */; };
 		1E8E1685299E3328002B9FF9 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8E1684299E3328002B9FF9 /* SwiftDate */; };
 		1E8E1687299E3B6D002B9FF9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E1686299E3B6D002B9FF9 /* DataController.swift */; };
@@ -45,6 +46,7 @@
 		1E2AA2B929C372330006F557 /* HypedEventWatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventWatchListView.swift; sourceTree = "<group>"; };
 		1E32AE99299CFEF3002C6AB4 /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 		1E3B11E329C8E89C003AC0D7 /* PhoneToWatchDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneToWatchDataController.swift; sourceTree = "<group>"; };
+		1E3B11E529C8EACD003AC0D7 /* WatchToPhoneDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchToPhoneDataController.swift; sourceTree = "<group>"; };
 		1E3FA629299CE3BD007A23DD /* CreateHypedEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
 		1E8E1686299E3B6D002B9FF9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1E8E168D299E725C002B9FF9 /* HypedEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventListView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				1E2AA2AD29C1EAE50006F557 /* HypedListWatchApp.swift */,
 				1E2AA2AF29C1EAE50006F557 /* ContentView.swift */,
 				1E2AA2B929C372330006F557 /* HypedEventWatchListView.swift */,
+				1E3B11E529C8EACD003AC0D7 /* WatchToPhoneDataController.swift */,
 				1E2AA2B129C1EAEB0006F557 /* Assets.xcassets */,
 				1E2AA2B329C1EAEB0006F557 /* Preview Content */,
 			);
@@ -294,6 +297,7 @@
 				1E2AA2AE29C1EAE50006F557 /* HypedListWatchApp.swift in Sources */,
 				1E2AA2BA29C372330006F557 /* HypedEventWatchListView.swift in Sources */,
 				1E2AA2BB29C372B00006F557 /* HypedEvent.swift in Sources */,
+				1E3B11E629C8EACD003AC0D7 /* WatchToPhoneDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var data = WatchToPhoneDataController.shared
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        HypedEventWatchListView(hypedEvents: data.hypedEvents)
     }
 }
 
